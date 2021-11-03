@@ -1,18 +1,19 @@
 <?php $this->load->view('layouts/header'); ?>
+<?php $this->load->view('layouts/sidebar'); ?>
+
 &nbsp;
-<!-- <div class="pull-left"><a href=""><i class="fa fa-bell fa-2x"></i></a></div> -->
-<div class="marquee">
+<!-- <div class="marquee">
     <p style="width:100%;">
         <marquee scrollamount="5">
-            <h4 style=" color:MediumSeaGreen; font-family:timesnewrohman;">لسَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللّهِ وَبَرَكَاتُهُ
+            <h6 style=" color:MediumSeaGreen; font-family:timesnewrohman;">لسَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللّهِ وَبَرَكَاتُهُ
                 <br>
                 <i>
                     <b>&emsp;&nbsp;"Selamat Datang"</b>
                 </i>
-            </h4>
+            </h6>
         </marquee>
     </p>
-</div>
+</div> -->
 
 <div id="page-wrapper">
     <div class="container-fluid">
@@ -29,7 +30,7 @@
             <div class="alert alert-danger" role="alert"><?= $this->session->userdata('delete') ?></div>
         <?php } ?>
         <div class="row">
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-12 col-md-12">
                 <p>Berikut ini adalah surat-surat yang telah terbit dan diarsipkan. <br>
                     Klik "Lihat" pada kolom aksi untuk menampilkan surat.
                 </p>
@@ -50,7 +51,7 @@
                                                                                                                                                         echo $keyword;
                                                                                                                                                     } ?>">
                                         <span class="input-group-btn">
-                                            <button class="btn btn-default" type="submit" style="margin-left: 25px;">Cari</button>
+                                            <button class="btn btn-success" type="submit" style="margin-left: 25px;"> Cari</button>
                                         </span>
                                     </div>
                                 </form>
@@ -127,5 +128,3 @@
         <?php } ?>
     </div>
 </div>
-
-<?php $this->load->view('layouts/footer'); ?>

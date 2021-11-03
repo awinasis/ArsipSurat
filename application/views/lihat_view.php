@@ -1,4 +1,5 @@
 <?php $this->load->view('layouts/header'); ?>
+<?php $this->load->view('layouts/sidebar'); ?>
 
 <div id="page-wrapper">
     <div class="container-fluid">
@@ -13,7 +14,7 @@
                 </section>
             </div>
             <div class="row">
-                <div class="col-lg-12 col-md-6">
+                <div class="col-lg-12 col-md-12">
                     <p>
                         Nomor : <?= $berita->nomor ?> <br>
                         Kategori : <?= $berita->kategori ?> <br>
@@ -80,7 +81,3 @@
             </div>
         </div>
     </div>
-
-
-
-    <?php $this->load->view('layouts/footer'); ?>

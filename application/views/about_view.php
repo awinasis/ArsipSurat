@@ -1,4 +1,5 @@
 <?php $this->load->view('layouts/header'); ?>
+<?php $this->load->view('layouts/sidebar'); ?>
 
 <div id="page-wrapper">
     <div class="container-fluid">
@@ -11,10 +12,10 @@
             </section>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-12 col-md-12">
                 <img src="<?= base_url(); ?>assets/image/1831710144_AbdullahWinasis.jpeg" alt="" width="250px">
             </div>
-            <div class="col-lg-9 col-md-6">
+            &emsp;&emsp;&emsp;&emsp;<div class="col-lg-12 col-md-12">
                 <h3>Website ini dibuat oleh:</h3><br>
                 <b>Nama : Abdullah Winasis <br>
                     NIM : 1831710144 <br>
@@ -23,5 +24,3 @@
         </div>
     </div>
 </div>
-
-<?php $this->load->view('layouts/footer'); ?>

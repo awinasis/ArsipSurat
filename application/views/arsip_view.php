@@ -1,4 +1,5 @@
 <?php $this->load->view('layouts/header'); ?>
+<?php $this->load->view('layouts/sidebar'); ?>
 
 <div id="page-wrapper">
     <div class="container-fluid">
@@ -11,7 +12,7 @@
             </section>
         </div>
         <div class="row">
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-12 col-md-12">
                 <p>Unggah surat yang telah terbit pada form ini untuk diarsipkan. <br>
                     Catatan:
                 </p>
@@ -22,7 +23,7 @@
         </div>
         <br>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-12">
                 <?php echo form_open_multipart('Home/TambahSurat'); ?>
                 <div class="form-group">
                     <label>Nomor Surat</label>
@@ -56,5 +57,3 @@
         </div>
     </div>
 </div>
-
-<?php $this->load->view('layouts/footer'); ?>
